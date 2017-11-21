@@ -17,9 +17,7 @@ Route::get('/', function () {
 
 Route::get('/ABOUT', function () {
     return '<title>WOY, DENGARKANLAH!!!</title>
-    		<h1>Halo</h1><br>
-    		Selamat Datang Di Webapp Saya<br>
-    		LARAVEL, Emang Keren';
+    		<center>Lagu Ini Kupersembahkan untukmu<br>Dimanapun.. Kau Berada..<br>Bersatu Bukan untuk berpecah belah..<br>Perbedaan Bukan Lah suatu masalah<br>Penampilan Bukan lah hal yang utama<br>Tapi hati kita yang menentukan nya<br>bersatu untuk persib bandung</center>';
 });
 
 
@@ -28,5 +26,15 @@ Route::get('/kantin/{mkn}/{mnm}/{mil}',function($mk,$mn,$ml){
 	});
 
 Route::get('/test/{u?}',function($a="Dadang"){
+	return $a;
+});
+
+Route::get('/TestSiswa', function(){
+	$a =App\Gema::find(2);
+	return $a;
+});
+
+Route::get('/tests', function(){
+	$a =App\Gema::where('alamat','like','Jl Sayuran 121')->get();
 	return $a;
 });

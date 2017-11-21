@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Muhammad Gema Nuryana Agung
+                    Muhammad Gema Nuryana Agung☺<br>
                 </div>
 
                 <div class="links">
